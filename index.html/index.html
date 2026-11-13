@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kelvin Mugo | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="c:\Users\HomePC\AppData\Local\Packages\5319275A.51895FA4EA97F_cv1g1gvanyjgm\LocalState\sessions\26A1EAF74195E1C06D0C4F427FC46B1AA92C1CFA\transfers\2026-46\WhatsApp Image 2026-11-13 at 14.57.03.jpeg" alt="kelvin.M">
+        <h1>KELVIN MUGO</h1>
+        <p>Web Developer | HTML | CSS | JavaScript</p>
+        <p class="reg">Reg No: CT100/G/26219/29 | Web Development Unit</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+
+        <button onclick="toggleDark()">🌙 Dark Mode</button>
+    </nav>
+
+    <div class="container">
+        <div class="card" id="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is <b>Kelvin Mugo</b>. I am a student pursuing <b>Bachelor of Information Technology</b>, Registration Number <b>CT100/G/26219/29</b>. I am passionate about Web Development and I specialize in building clean, responsive and user-friendly websites using <b>HTML, CSS and JavaScript</b>.</p>
+            <p style="margin-top:8px;">My goal is to become a professional Full-Stack Web Developer.</p>
+            <button onclick="showMore()" style="margin-top:10px; background:#1a1a2e; color:#fff; border:none; padding:8px 15px; border-radius:5px; cursor:pointer;">Read More About Me</button>
+            <p id="moreText" style="display:none; margin-top:10px;">I love coding, learning new technologies and solving real-life problems through websites. I started learning HTML and CSS in class and now I can build complete websites on my own.</p>
+      
+
+            <br>
+       <h3><b><u>Unit Evaluation</u></b></h3>
+Thank you professor <b>Alex omondi</b> for how you taugt well,explained,elaborated and also for showing us practicality of Web developement.
+I really apreciate your contribution in our education journey.
+More so,i was able to build some web pages using HTMS,CSS and JS enabling me to host the html file(s) and deploy it to public users via git and github knowledge that you shared with us.
+
+        </div>
+
+        <div class="card" id="skills">
+            <h3><u>Key And Relevant points About Web development</u></h3>
+            <ol>
+                <li>Create a folder, then open your editor.</li>
+                <li>open the folder you created.</li>
+                <li>Create three files;html,css and js files. </li>
+                <li>Write your html code to structure your web page.</li>
+                <li>Shift to css file and write your css code to beautify your web page.</li>
+                <li>Shift to js file,write your js code for interactivity with the web page</li>
+                <li>Run your code and debug for any errors that may exist.</li>
+                <li>If no buggs push it to your github repository. </li>
+                <li>Then you deploy your project in git by following some guidelines set by git.</li>
+            </ol>
+            <br><br>
+            <h2>My Skills - Click a skill</h2>
+            <div class="skills">
+                <span onclick="skillClick('HTML5')">HTML5</span>
+                <span onclick="skillClick('CSS3')">CSS3</span>
+                <span onclick="skillClick('JavaScript')">JavaScript</span>
+                <span onclick="skillClick('Responsive Design')">Responsive Design</span>
+                <span onclick="skillClick('Bootstrap')">Bootstrap</span>
+                <span onclick="skillClick('Git & GitHub')">Git & GitHub</span>
+            
+            </div>
+            <p id="skillMsg" style="margin-top:10px; font-weight:bold; color:#00c6ff;"></p>
+        </div>
+
+        <div class="card" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>1. Personal Portfolio Website</h3>
+                    <p>A responsive personal portfolio built with HTML & CSS to showcase my skills.</p>
+                    
+                </div>
+                <div class="project">
+                    <h3>2. Student Registration Form</h3>
+                    <p>A validated HTML form for student registration with CSS styling.</p>
+                    
+                </div>
+                <div class="project">
+                    <h3>3. Simple Calculator</h3>
+                    <p>A JavaScript calculator that performs basic arithmetic operations.</p>
+                    
+                </div>
+                <div class="project">
+                    <h3>4. School Website</h3>
+                    <p>A multi-page school website with Home, About, Admissions and Contact pages in a precise manner.</p>
+                    
+                </div>
+            </div>
+            <br><br>
+            <P><b>visit to see some of my project </b></P>
+            <button style="background-color: rgb(238, 238, 241); font: inherit;"> <a href="https://github.com/kelvinmugo5002-prog">Click to view</a></button>
+
+        </div>
+
+        <div class="card" id="education">
+            <h2>Education</h2>
+            <table>
+                <tr><th>Year</th><th>Course / Institution</th></tr>
+                <tr><td>2025 - Present</td><td>Degree in Information Technology - Kirinyaga University</td></tr>
+                <tr><td>Web Development Unit</td><td>HTML, CSS, JavaScript, Web Design Principles</td></tr>
+            </table>
+        </div>
+
+        <div class="card" id="contact">
+            <h2>Contact Me</h2>
+            <form onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Your Name">
+                <br><br>
+                <input type="email" id="email" placeholder="Your Email">
+                <br><br>
+                <textarea rows="4" id="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="msg"></p>
+            <p style="margin-top:12px;"><b>Name:</b> Kelvin Mugo<br>
+            <b>Reg No:</b> CT100/G/26219/29<br>
+            <b>Email:</b> Kelvinmugo5002@gmail.com<br>
+            <b>Phone:</b> 0769823229</p>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <p>&copy;2026 Kelvin Mugo | CT100/G/26219/29 | Web Development Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
